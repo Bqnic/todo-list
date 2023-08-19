@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>simply do</title>
+<script defer src="main.js"></script></head>
+<body>
+    <div class="container">
+        <div class="header">
+            <button id="menu"><img src="../images/menu.svg" alt="menu"></button>
+            <h1>simply do</h1>
+        </div>
+        <div class="sidebar">
+            <div class="upper">
+                <div class="tasks-container">
+                    <p>Your tasks</p>
+                </div>
+            </div>
+            <ul>
+                <li id="all-tasks"> <img src="../images/calendar-check.svg" alt="">All tasks</li>
+                <li id="today"> <img src="../images/calendar-today.svg" alt="">Today</li>
+                <li id="week"> <img src="../images/calendar-week.svg" alt="">This week</li>
+                <li id="month"> <img src="../images/calendar-month.svg" alt="">This month</li>
+                <li id="project-btn"> <img src="../images/newspaper-variant-multiple-outline.svg" alt="">Add a project</li>
+            </ul>
+            <div class="projects-container"></div>
+        </div>
+
+        <button id="add">+</button>
+
+        <div class="popup-task">
+            <form id="adding-task" action="">
+                <div class="write">
+                    <label for="title">Title</label>
+                    <input type="text" name="title" id="title" required maxlength="30">
+                </div>
+                <div class="write">
+                    <label for="desc">Description</label>
+                    <input type="text" name="desc" id="desc">
+                </div>
+                <div class="write">
+                    <label for="deadline">Deadline</label>
+                    <input type="date" name="deadline" id="deadline">
+                </div>
+                <fieldset>
+                    <legend>Select priority:</legend>
+                  
+                    <div>
+                      <input type="radio" id="high" name="priority" value="high" checked />
+                      <label for="high">High</label>
+                    </div>
+                  
+                    <div>
+                      <input type="radio" id="medium" name="priority" value="medium" />
+                      <label for="medium">Medium</label>
+                    </div>
+                  
+                    <div>
+                      <input type="radio" id="low" name="priority" value="low" />
+                      <label for="low">Low</label>
+                    </div>
+                  </fieldset>
+
+                  <p id="errorMessage"></p>
+
+                  <div class="option-btns">
+                    <button type="button" id="cancel-add-task">Cancel</button>
+                    <button id="submit" type="submit">Add task</button>
+                  </div>
+            </form>
+        </div>
+
+        <div class="popup-task" id="edit-task">
+            <form id="editing-task" action="">
+                <div class="write">
+                    <label for="title">Title</label>
+                    <input type="text" name="title" id="e-title" required maxlength="30">
+                </div>
+                <div class="write">
+                    <label for="desc">Description</label>
+                    <input type="text" name="desc" id="e-desc">
+                </div>
+                <div class="write">
+                    <label for="deadline">Deadline</label>
+                    <input type="date" name="deadline" id="e-deadline">
+                </div>
+                <fieldset>
+                    <legend>Select priority:</legend>
+                  
+                    <div>
+                      <input type="radio" id="e-high" name="priority" value="high" checked />
+                      <label for="high">High</label>
+                    </div>
+                  
+                    <div>
+                      <input type="radio" id="e-medium" name="priority" value="medium" />
+                      <label for="medium">Medium</label>
+                    </div>
+                  
+                    <div>
+                      <input type="radio" id="e-low" name="priority" value="low" />
+                      <label for="low">Low</label>
+                    </div>
+                  </fieldset>
+
+                  <p id="e-errorMessage"></p>
+
+                  <div class="option-btns">
+                    <button type="button" id="cancel-edit-task">Cancel</button>
+                    <button id="e-submit" type="submit">Apply</button>
+                  </div>
+            </form>
+        </div>
+
+        <div class="popup-task" id="add-project">
+            <form id="adding-project" action="">
+                <div class="write">
+                    <label for="project">Project</label>
+                    <input type="text" name="project" id="project" required maxlength="30">
+                </div>
+
+                  <p id="p-errorMessage"></p>
+
+                  <div class="option-btns">
+                    <button type="button" id="cancel-add-project">Cancel</button>
+                    <button type="submit">Add</button>
+                  </div>
+            </form>
+        </div>
+
+        <div class="popup-task" id="edit-project">
+            <form id="editing-project" action="">
+                <div class="write">
+                    <label for="e-project">Project</label>
+                    <input type="text" name="e-project" id="e-project" required maxlength="30">
+                </div>
+
+                  <p id="e-p-errorMessage"></p>
+
+                  <div class="option-btns">
+                    <button type="button" id="cancel-edit-project">Cancel</button>
+                    <button type="submit">Edit</button>
+                  </div>
+            </form>
+        </div>
+
+        <div class="popup-task" id="delete-project">
+            <p>Are you sure you want to delete this project and all of it's tasks?</p>
+            <div>
+                <button id="confirm-delete">Yes</button>
+                <button id="cancel-delete">Cancel</button>
+            </div>
+        </div>
+
+        <p id="dichotomy">All tasks</p>
+
+        <div class="cards"></div>
+
+        <div class="view-details"></div>
+
+    </div>
+</body>
+</html>
