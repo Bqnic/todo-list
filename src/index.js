@@ -8,6 +8,7 @@ import { projects, addProject } from './project';
 const sidebar = document.querySelector('.sidebar');
 const addBtn = document.querySelector('#add');
 
+//disabling putting past dates as deadlines
 let today = new Date().toISOString().split('T')[0];
 document.getElementsByName('deadline')[0].setAttribute('min', today);
 document.getElementsByName('deadline')[1].setAttribute('min', today);
@@ -147,7 +148,6 @@ sidebar.addEventListener('touchstart', (e) => {
 });
 
 sidebar.addEventListener('touchmove', (e) => {
-    e.preventDefault();
     touchEnd = e.targetTouches[0].clientX;
 });
 
