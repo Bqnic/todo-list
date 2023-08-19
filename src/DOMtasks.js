@@ -27,7 +27,7 @@ export function showTask(task){
     secondDiv.appendChild(document.createElement('p')).textContent = task.deadline;
     
     let trashCan = document.createElement('img');
-    trashCan.src = "../images/trash-can-outline.svg";
+    trashCan.src = "images/trash-can-outline.svg";
     trashCan.alt = "trash";
 
     trashCan.addEventListener('click', () => {

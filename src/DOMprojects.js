@@ -13,7 +13,7 @@ export function showProject(project){
     projectDOM.classList.add('projectDOM');
     
     const projectIcon = document.createElement('img');
-    projectIcon.src = '../images/projector-screen-variant-outline.svg';
+    projectIcon.src = 'images/projector-screen-variant-outline.svg';
     projectIcon.alt = 'project-icon';
     projectIcon.classList.add('projectIcons');
     projectDOM.appendChild(projectIcon);
@@ -25,7 +25,7 @@ export function showProject(project){
     dropdown.classList.add('dropdown');
 
     const dots = document.createElement('img');
-    dots.src = '../images/dots-vertical.svg';
+    dots.src = 'images/dots-vertical.svg';
     dots.alt = 'dots';
     dots.classList.add('projectIcons');
 
