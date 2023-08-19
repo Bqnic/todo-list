@@ -160,14 +160,5 @@ sidebar.addEventListener('touchend', () => {
 });
 
 
-//TODO
-// - Edit and Delete project (DONE)
-// - Add cancel buttons (DONE)
-// - Don't allow earlier dates than today (DONE)
-// - Design for mobile (DONE)
-// - localStorage
-// - change name of project (DONE)
-
-
 
 

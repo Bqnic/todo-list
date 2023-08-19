@@ -1,6 +1,4 @@
 # todo-list
-The Odin Project
-
 This project is suggested by The Odin Project curriculum.
 
 
