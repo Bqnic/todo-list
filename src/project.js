@@ -1,7 +1,7 @@
 import { cleanAllProjects, showAllProjects } from "./DOMprojects";
 import { cleanAllTasks, showAllTasks } from "./DOMtasks";
 import { closeEditProjectPopup } from "./bodymanipulation";
-import { saveProjects } from "./storage";
+import { saveProjects, saveTasks } from "./storage";
 import { allTasks, deleteTasksAssociatedWithProject } from "./task";
 
 let createProject = function(name){
@@ -40,6 +40,7 @@ export function editProject(project, newName){
     showAllProjects();
 
     saveProjects();
+    saveTasks();
 }
 
 export function deleteProject(project){
