@@ -6,3 +6,5 @@ It is made in html, vanilla css and vanilla javascript, localStorage for saving/
 
 
 Made to work on all sizes, including mobile.
+
+Live preview: [simply do](https://bqnic.github.io/todo-list/)
